@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones Regulares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card" role="main">
+        <h1>Registro rápido</h1>
+        <p class="lead"> 
+            Formulario de práctica: validaciones con expresiones regulares.
+        </p>
+
+        <!--la propiedad novalidate desactiva la validacion automatica del navegador y esto permite usar reglas propoas de JavaScript-->
+        <form id="miForm" novalidate> 
+
+            <div class="field">
+            <!--el atributo for de label vincula un camp del formulario que contenga un id identico y-->
+                <label for="nombre">Nombre y apellido </label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ej. Ana Pérez" autocomplete="name" required>
+                <div id="error-nombre" class="error" aria-live="polite"></div>
+                <small class="hint">Solo letras (incluye tildes) y espacios, 2-50 carácteres.</small>
+            </div>
+
+            <div class="field">
+                <label for="edad">Edad</label>
+                <input id="edad" name="edad" type="number" min="18" max="101" required>
+                <div id="error-edad" class="error" aria-live="polite"></div>
+                <small>Mayores a 18 años, menores de 100 años.</small>
+            </div>
+
+            <div class="field">
+                <label for="telefono">Número de Teléfono</label>
+                <input id="telefono" name="telefono" type="tel" placeholder="(668)-123-55-66" autocomplete="tel" required>
+                <div id="error-telefono" class="error" aria-live="polite"></div>
+                <small class="hint">Iincluye lada. Formato: (LADA)-XXX-XX-XX. 10 digitos.</small>
+            </div>
+
+            <div class="field">
+                <label for="salario">Salario</label>
+                <input id="salario" name="salario" type="text" min="0" placeholder="1,234.56" required>
+                <div id="error-salario" class="error" aria-live="polite"></div>
+                <small class="hint">Ingresa tu salario en números, hasta dos decimales.</small>
+            </div>
+
+            <div class="field">
+                <label for="rfc">RFC</label>
+                <input id="rfc" name="rfc" type="text" placeholder="AAAA010101XXX" maxlength="13" autocomplete="name" required>
+                <div id="error-rfc" class="error" aria-live="polite"></div>
+                <small class="hint">Formato: 4 letras + 6 dígitos de fecha + 3 caracteres alfanuméricos opcionales .</small>
+            </div>
+
+            <div class="field">
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo-mi_correo@universidad.edu.mx" autocomplete="email" required>
+                <div id="error-email" class="error" aria-live="polite"></div>
+                <small class="hint">
+                    Ingresa un correo válido.<br>
+                    Usuario: solo letras, números, puntos, guiones y guion bajo.<br>
+                </small>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn-primary">Enviar</button>
+                <button type="button" id="resetBtn" class="btn-ghost">Limpiar</button>
+            </div>
+
+            <div id="status" role="status" class="status" style="display:none"></div>
+        </form>
+  </main>
+   <!--el atributo defer asgura que el script se ejecute despues de que el html se haya cargado-->
+   <script src="expRegulares.js" defer></script>
+</body>
+</html>
