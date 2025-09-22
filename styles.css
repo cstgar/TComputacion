@@ -1,8 +1,8 @@
 :root {
-    --purple-1:#2b0b3a; /* oscuro */
-    --purple-2:#4b1560; /* medio */
-    --purple-3:#7f3fbf; /* vivo */
-    --accent:#c9a3ff;  /* acento */
+    --blue-1:#023c44; /* oscuro */
+    --blue-2:#036773; /* medio */
+    --blue-3:#058791; /* vivo (color base) */
+    --accent:#7fdbe2;  /* acento */
     --white: #ffffff;
     --radius:10px;
     --gap:12px;
@@ -19,14 +19,14 @@ body {
     align-items:center;
     justify-content:center;
     font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: linear-gradient(135deg, var(--purple-1) 0%, var(--purple-2) 45%, var(--purple-3) 100%);
+    background: linear-gradient(135deg, var(--blue-1) 0%, var(--blue-2) 45%, var(--blue-3) 100%);
     color:var(--white);
     -webkit-font-smoothing:antialiased;
 }
 
 .card {
     width:100%;
-    max-width:480px;
+    max-width:700px;
     background: rgba(255,255,255,0.04);
     border-radius:var(--radius);
     padding:24px;
@@ -60,7 +60,7 @@ label {
 }
 
 /*Selctores de atributo  en este caso cuyo type sea igual a text, email, password tel*/
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+input[type="text"] {
     padding:10px 12px;
     border-radius:8px;
     border:1px solid rgba(255,255,255,0.12);
@@ -69,21 +69,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     font-size:0.95rem;
     outline:none;
     transition:box-shadow .15s, border-color .15s, transform .06s;
-}
-
-input:focus, textarea:focus {
-    border-color:var(--accent);
-    box-shadow:0 4px 18px rgba(124,58,237,0.12);
-    transform:translateY(-1px);
-}
-
-.row {
-    display:flex;
-    gap:12px;
-}
-
-.row .field {
-    flex:1
 }
 
 .hint {
@@ -113,7 +98,7 @@ button {
     font-weight:600;
 }
 .btn-primary {
-    background:linear-gradient(90deg,var(--purple-3),var(--accent));
+    background:linear-gradient(90deg,var(--blue-3),var(--accent));
     color:#2b0b3a;
 }
 
