@@ -3,7 +3,7 @@
 // Expresión regular para tokens válidos:
 const PATTERNS = {
     // Validación general: solo números, operadores, paréntesis y espacios
-    expresion: /^[0-9()+\-*/\s]+$/,
+    expresion: /^[0-9()+\-*]+$/,
     // Tokenización: números (\d+), operadores, paréntesis
     token: /\d+|[()+\-*/]/g
 };

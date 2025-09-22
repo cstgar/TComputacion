@@ -54,7 +54,7 @@ La práctica se implementa en **HTML, CSS y JavaScript**, mostrando tanto la ent
 ## Cómo usar
 Aqui se muestra el link donde esta publicado el proyecto:
 
-[Repositorio de la práctica](https://leafy-mooncake-0f747e.netlify.app/)
+[Link a la práctica](https://leafy-mooncake-0f747e.netlify.app/)
 
 De otra manera localmente se puede acceder con los siguientes pasos:
 1. Abrir el archivo `index.html` en un navegador web.
