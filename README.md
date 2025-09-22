@@ -73,6 +73,8 @@ De otra manera localmente se puede acceder con los siguientes pasos:
 - Error de cierre: `(12+7*(3-1)-(56)))`
 - Error de apertura: `12+7)*3`
 - Expresión compleja: `((15+23)*(7-(3+2*5))+((12/4)-6)*(8+9)-((7+3)*2))`
+- Expresión compleja: `((((((1+2)*3)-4)/5)+6)-7)`
+
 
 ---
 

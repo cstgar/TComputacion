@@ -59,7 +59,7 @@ label {
     display:flex;flex-direction:column;
 }
 
-/*Selctores de atributo  en este caso cuyo type sea igual a text, email, password tel*/
+/*Selctores de atributo  en este caso cuyo type sea igual a text*/
 input[type="text"] {
     padding:10px 12px;
     border-radius:8px;
